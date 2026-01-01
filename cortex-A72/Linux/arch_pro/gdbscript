@@ -1,8 +1,0 @@
-file /home/chiara/aflplusplus/vp_mode/example_target/buildroot_6_5_6/buildroot.elf
-set substitute-path /app/build/buildroot/output/linux/build/linux-6.5.6 /home/chiara/aflplusplus/vp_mode/example_target/buildroot_6_5_6/linux-6.5.6
-layout split
-focus cmd
-
-b pl011_shutdown
-b amba-pl011.c:1974
-b __synchronize_hardirq
