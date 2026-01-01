@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "mpu6050.h": "c",
-        "mpu6050_defs.h": "c"
-    }
-}
