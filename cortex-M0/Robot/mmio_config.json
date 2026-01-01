@@ -1,0 +1,50 @@
+{
+    "UART": {
+        "registers": {
+            "INTENSET":{
+                "address": "0x40002304",
+                "injection": false,
+                "length": 32,
+                "mask": "0x4",
+                "interrupt": true,
+                "fuzz_data": false
+            },
+            "INTENCLR":{
+                "address": "0x40002308",
+                "injection": false,
+                "length": 32,
+                "mask": "0x0",
+                "interrupt": true,
+                "fuzz_data": false
+            }
+        }
+    },
+    "I2C": {
+        "registers": {
+            "TASKS_STARTRX": {
+                "address": "0x40003000",
+                "injection": true,
+                "length": 32,
+                "mask": null,
+                "interrupt": false,
+                "fuzz_data": true
+            },
+            "ADDRESS": {
+                "address": "0x40003588",
+                "injection": false,
+                "length": 32,
+                "mask": "0x0",
+                "interrupt": false,
+                "fuzz_data": false
+            },
+            "TASKS_RESUME": {
+                "address": "0x40003020",
+                "injection": true,
+                "length": 32,
+                "mask": null,
+                "interrupt": false,
+                "fuzz_data": true
+            }
+        }
+    }
+}
